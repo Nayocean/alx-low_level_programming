@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
  * print_array_elements - Prints all char of a string
  *
  * @str: Pointer to string
- * 
+ *
  * Return: void
  */
 
