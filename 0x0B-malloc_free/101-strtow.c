@@ -71,6 +71,7 @@ void look_pos(char *str, int *pos)
 		i++;
 	}
 }
+
 /**
  * print_words - function that stores in m the words found in str
  * Return: 1 if fail.
@@ -132,7 +133,7 @@ char **strtow(char *str)
 	if (m == NULL)
 	{
 		for (words = words - 1; words >= 0; words--)
-		free(*(m + words));
+			free(*(m + words));
 		free(m);
 		return (NULL);
 	}
