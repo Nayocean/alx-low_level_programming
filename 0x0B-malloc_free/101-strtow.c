@@ -51,7 +51,7 @@ void look_pos(char *str, int *pos)
 		if (*(str + i) != ' '  && *(str + i + 1) == 0 && flagw)
 		{
 			*(pos + k) = i;
-			*(pos + k + 1) = i
+			*(pos + k + 1) = i;
 		}
 		if (*(str + i) != ' ' && *(str + i) != 0 && flagw)
 		{
@@ -104,7 +104,7 @@ int print_words(int *pos, char **m, char *str, int words)
 		for (l = 0; l < sz - 1; l++, p1++)
 			*(*(m + b) + l) = *(str + p1);
 		*(*(m + b) + l) = '\0';
-		b1 = b1 + 2;
+				b1 = b1 + 2;
 	}
 	*(m + b) = NULL;
 	return (0);
@@ -148,7 +148,6 @@ char **strtow(char *str)
 	if (print_words(pos, m, str, words))
 	{
 		return (NULL);
-		}
+	}
 	return (m);
 }
-
