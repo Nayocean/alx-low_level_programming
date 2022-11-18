@@ -30,6 +30,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 
 	va_start(args, format);
+
 	while (format && format[j] != '\0')
 	{
 		get_func_ptr = get_func(format[j], fmt_arr);
@@ -65,6 +66,7 @@ void (*get_func(char identifier, struct format_struct *fmt_arr))(va_list *)
 		{
 			return (fmt_arr[i].fmt_print_func);
 		}
+
 		i++;
 	}
 
