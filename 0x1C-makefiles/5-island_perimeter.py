@@ -16,7 +16,7 @@ def num_water_neighbors(grid, i, j):
         if i >= len(grid) - 1 or not grid[i + 1][j]:
             num +=1
 
-            return num
+        return num
 
 
 def island_perimeter(grid):
