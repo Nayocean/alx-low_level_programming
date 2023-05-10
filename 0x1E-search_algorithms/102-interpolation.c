@@ -1,12 +1,12 @@
 #include "search_algos.h"
 
 /**
- *   * interpolation_search - search the first ocurrency of a value in the array
- *     * @array: set of numbers
- *       * @size: size of the array
- *         * @value: value to search
- *           * Return: return the first index located otherwise -1
- *             */
+ * interpolation_search - search the first ocurrency of a value in the array
+ * @array: set of numbers
+ * @size: size of the array
+ * @value: value to search
+ * Return: return the first index located otherwise -1
+ */
 int interpolation_search(int *array, size_t size, int value)
 {
 	size_t l = 0, r = size - 1, pos = 0;
